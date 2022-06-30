@@ -31,7 +31,7 @@ apt install -y git unzip apache2 php7.4 curl php7.4-fpm php7.4-curl php7.4-mbstr
 php7.4-tidy php7.4-xml php7.4-zip php7.4-gd php7.4-mysql mysql-server-8.0 libapache2-mod-php7.4
 
 # Set up database
-DB_PASS="Supshzz60!"
+DB_PASS="your password"
 mysql -u root --execute="CREATE DATABASE bookstack;"
 mysql -u root --execute="CREATE USER 'haribahadur'@'localhost' IDENTIFIED WITH mysql_native_password BY '$DB_PASS';"
 mysql -u root --execute="GRANT ALL ON bookstack.* TO 'bookstack'@'localhost';FLUSH PRIVILEGES;"
